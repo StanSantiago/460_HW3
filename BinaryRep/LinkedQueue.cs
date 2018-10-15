@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BinaryRep
 {
     class LinkedQueue<T> : QueueInterface<T>
@@ -33,6 +34,7 @@ namespace BinaryRep
             }
             else
             {
+                // General case
                 Node<T> tmp = new Node<T>(element, null);
                 rear.next = tmp;
                 rear = tmp;
@@ -50,12 +52,14 @@ namespace BinaryRep
             }
             else if(front == rear)
             {
+                // one item in queue
                 tmp = front.data;
                 front = null;
                 rear = null;
             }
             else
             {
+                // General case
                 tmp = front.data;
                 front = front.next;
             }

@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BinaryRep
 {
+    /** Singly linked node class. */
     class Node<T>
     {
         public T data;
