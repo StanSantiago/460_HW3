@@ -10,7 +10,7 @@ namespace BinaryRep
     {
         T push(T element);
 
-        T pop() /*throw QueueuUnderflowException()*/;
+        T pop();
 
         Boolean isEmpty();
     }
